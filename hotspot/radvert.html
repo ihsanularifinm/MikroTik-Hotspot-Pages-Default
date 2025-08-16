@@ -30,10 +30,10 @@ td { font-size: 12px; color: #7A7A7A; }
     var popup = '';
     function openOrig() {
 	if (window.focus) popup.focus();
-	location.href = '$(link-orig)';
+	location.href = unescape('$(link-orig-esc)');
     }
     function openAd() {
-	location.href = '$(link-redirect)';
+	location.href = unescape('$(link-redirect-esc)');
     }
     function openAdvert() {
 	if (window.name != 'hotspot_advert') {
